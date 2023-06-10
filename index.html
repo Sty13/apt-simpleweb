@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="widhttps://i.postimg.cc/PfwZ6bDk/rocket.pngth=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="indexz">
+        <img src="logo.png" class="logo">
+        <div class="content">
+            <p>O site está em construção.</p>
+            <h1><span>Lançamento</span> em:</h1>
+            <div class="launch-time">
+                <h1 style="font-size: 50px;">breve!</h1>
+                </div>
+
+            <button href="mailto:suporte@apptivium.com.br" type="button" id="contact-button">Entre em contato <img
+                    src="https://i.postimg.cc/QC1THsDM/triangle.png"></button>
+        </div>
+        <img src="https://i.postimg.cc/PfwZ6bDk/rocket.png" class="rocket">
+    </div>
+</div>
+    <div id="particles-js">
+    </div>
+    <script src="assets/particles.js"></script>
+    <script src="assets/app.js"></script>
+    <script>
+        const contactButton = document.getElementById('contact-button');
+        contactButton.addEventListener('click', () => {
+          const mailtoLink = 'mailto:suporte@apptivium.com.br';
+          window.location.href = mailtoLink;
+        });
+      </script>
+</body>
+
+</html>
