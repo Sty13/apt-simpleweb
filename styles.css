@@ -1,188 +1,182 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'poppins', sans-serif;
-    box-sizing: border-box;
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 body {
-    background-color: rgb(0, 0, 0);
+  background: rgb(15, 15, 15);
 }
 
 #particles-js {
-    z-index: -1;
-    margin-top: 0px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url(./bg.png);
-    width: 100vw;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
+  z-index: -1;
+  margin-top: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
 }
 
 .indexz {
-    z-index: 10;
+  z-index: 10;
 }
 
 .container {
-    width: 100vw;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    padding: 0 13%;
-
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  padding: 0 13%;
 }
 
 .logo {
-    width: 170px;
-    padding: 20px 0;
-    cursor: pointer;
-
+  width: 170px;
+  padding: 20px 0;
+  cursor: pointer;
 }
 
 .content {
-    top: 50%;
-    position: absolute;
-    transform: translateY(-50%);
-    color: #fff;
-
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  color: #fff;
 }
 
 .content h1 {
-    font-size: 64px;
-    font-weight: 600;
+  font-size: 64px;
+  font-weight: 600;
 }
 
 .content h1 span {
-    color: #5b37ff;
+  color: #5b37ff;
 }
 
 .content button {
-    background: transparent;
-    border: 2px solid #fff;
-    outline: none;
-    padding: 12px 25px;
-    color: #fff;
-    display: flex;
-    font-weight: 700;
-    align-items: center;
-    margin-top: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  padding: 12px 25px;
+  color: #fff;
+  display: flex;
+  font-weight: 700;
+  align-items: center;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .content button img {
-    width: 15px;
-    margin-left: 10px;
-    margin-right: -10px;
-    transition: all 0.3s ease;
+  width: 15px;
+  margin-left: 10px;
+  margin-right: -10px;
+  transition: all 0.3s ease;
 }
 
 .content button:hover {
-    background: #fff;
-    color: #000000;
-    transition: all 0.3s ease;
+  background: #fff;
+  color: #000000;
+  transition: all 0.3s ease;
 }
 
 .content button img:hover {
-    transform: rotate(360deg);
-    transition: all 0.3s ease;
+  transform: rotate(360deg);
+  transition: all 0.3s ease;
 }
 
 .launch-time {
-    display: flex;
+  display: flex;
 }
 
 .launch-time div {
-    flex-basis: 200px;
-
+  flex-basis: 200px;
 }
 
 .launch-time div p {
-    font-size: 60px;
-    margin-bottom: -4px;
-
+  font-size: 60px;
+  margin-bottom: -4px;
 }
 
 .rocket {
-    width: 150px;
-    position: absolute;
-    right: 5%;
-    bottom: 50px;
-    /* animation: rocket 5s linear infinite, shake 0.5s linear infinite; */
+  width: 150px;
+  position: absolute;
+  right: 5%;
+  bottom: 50px;
+  /* animation: rocket 5s linear infinite, shake 0.5s linear infinite; */
 }
 
 .rocketing {
-    width: 150px;
-    position: absolute;
-    right: 5%;
-    bottom: 50px;
-    animation: rocket 5s linear infinite, shake 0.5s linear infinite;
+  width: 150px;
+  position: absolute;
+  right: 5%;
+  bottom: 50px;
+  animation: rocket 5s linear infinite, shake 0.5s linear infinite;
 }
 
 .rocket:hover {
-    animation: shake 0.5s linear none;
+  animation: shake 0.5s linear none;
 }
 
 @keyframes shake {
-    0% {
-        transform: translate(1px, 1px) rotate(0deg);
-    }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
 
-    10% {
-        transform: translate(-1px, -2px) rotate(-1deg);
-    }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
 
-    20% {
-        transform: translate(-3px, 0px) rotate(1deg);
-    }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
 
-    30% {
-        transform: translate(3px, 2px) rotate(0deg);
-    }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
 
-    40% {
-        transform: translate(1px, -1px) rotate(1deg);
-    }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
 
-    50% {
-        transform: translate(-1px, 2px) rotate(-1deg);
-    }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
 
-    60% {
-        transform: translate(-3px, 1px) rotate(0deg);
-    }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
 
-    70% {
-        transform: translate(3px, 1px) rotate(-1deg);
-    }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
 
-    80% {
-        transform: translate(-1px, -1px) rotate(1deg);
-    }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
 
-    90% {
-        transform: translate(1px, 2px) rotate(0deg);
-    }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
 
-    100% {
-        transform: translate(1px, -2px) rotate(-1deg);
-    }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 @keyframes rocket {
-    0% {
-        margin-bottom: -20%;
-        bottom: 0;
-        opacity: 0;
-    }
+  0% {
+    margin-bottom: -20%;
+    bottom: 0;
+    opacity: 0;
+  }
 
-    100% {
-        bottom: 125%;
-        opacity: 1;
-        margin-bottom: 0%;
-    }
+  100% {
+    bottom: 125%;
+    opacity: 1;
+    margin-bottom: 0%;
+  }
 }
