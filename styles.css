@@ -7,7 +7,61 @@
 }
 
 body {
-  background: rgb(15, 15, 15);
+  background: rgb(0, 0, 0);
+}
+
+p {
+  background: #000000;
+  background: linear-gradient(
+    to right,
+    #000000 0%,
+    #000000 40%,
+    #ffffff 50%,
+    #000000 60%,
+    #000000 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 600% 600%;
+  animation: cng 15s linear infinite;
+  font-weight: 800;
+  background-repeat: no-repeat;
+
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
+}
+
+.bottomleft img {
+  width: 600px;
+  height: 500px;
+  rotate: 180deg;
+}
+
+.topright {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.topright img{
+  width: 600px;
+  height: 500px;
+}
+
+@keyframes cng {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 200% 200%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
 }
 
 #particles-js {
@@ -45,11 +99,18 @@ body {
   position: absolute;
   transform: translateY(-50%);
   color: #fff;
+  width: 100vw;
+  height: 105vh;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .content h1 {
-  font-size: 64px;
-  font-weight: 600;
+  font-size: 84px;
+  font-weight: 800;
 }
 
 .content h1 span {
