@@ -111,6 +111,7 @@ p {
 .content h1 {
   font-size: 84px;
   font-weight: 800;
+  text-transform: uppercase;
 }
 
 .content h1 span {
